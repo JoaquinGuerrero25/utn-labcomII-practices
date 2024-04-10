@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de datos personales</h1>
+    <form>
+        <input type="text" value="ESTUDIANTE" readonly>
+        <br>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" name="nombre" id="nombre">
+        <br>
+        <label for="email" checj>Email</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad">
+        <br>
+        <label for="nacionalidad">Nacionalidad</label>
+        <select name="nacionalidad" id="nacionalidad" required>
+            <option value="" disabled selected>Selecciona una opcion</option>
+            <option value="argentina">Argentina</option>
+        </select>
+        <br>
+        <label for="condicion-laboral">Condición Laboral:</label>
+        <select id="condicion-laboral" name="condicion-laboral" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="desempleado">Desempleado</option>
+            <option value="busqueda_laboral">En Búsqueda Laboral</option>
+            <option value="part_time">Trabajo Part Time</option>
+            <option value="full_time">Trabajo Full Time</option>
+        </select>
+
+        <fieldset>
+            <legend>Gustos Personales</legend>
+            <label for="musica">Gustos Musicales:</label><br>
+            <input type="text" id="musica" name="musica"><br><br>
+            
+            <label for="comida">Comidas Preferidas:</label><br>
+            <select id="comida" name="food">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="pizza">Pizza</option>
+                <option value="sushi">Sushi</option>
+                <option value="hamburguesa">Hamburguesa</option>            
+            </select>
+        </fieldset>
+        <br>
+        <label for="remember">Recordar datos del  usuario</label>
+        <input type="checkbox" name="remember" id="remember">
+        <br>
+        <button type="submit">enviar datos</button>
+    </form>
+</body>
+</html>
