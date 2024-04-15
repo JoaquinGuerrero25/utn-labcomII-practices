@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    gap: 2px;
+    font-family: sans-serif;
+
+}
+
+.sidebar-left, .content {
+    padding: 12px 24px;
+    height: 100vh;
+}
+
+.sidebar-left {
+    background: rgb(133,215,239);
+    flex: 1;
+}
+
+.content {
+    background: rgb(193,219,210);
+    flex: 4;
+}
